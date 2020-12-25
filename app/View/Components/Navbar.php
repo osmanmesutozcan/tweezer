@@ -16,7 +16,7 @@ class Navbar extends Component
         ]);
     }
 
-    private function navItems()
+    private function navItems(): array
     {
         return [
             ['Tweezer'],

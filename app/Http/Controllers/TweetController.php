@@ -21,7 +21,6 @@ class TweetController extends Controller
 
     public function store(Request $request)
     {
-        sleep(2);
         return redirect()->route('tweet.create');
     }
 }
