@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: .docker/Dockerfile
+      dockerfile: docker/Dockerfile
     image: 'tweezer-app'
     ports:
       - 8080:80
