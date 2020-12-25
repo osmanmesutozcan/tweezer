@@ -4,8 +4,9 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      args.user: osman
-      args.uid: 1000
+      args:
+        user: osman
+        uid: 1000
 
     image: tweezer
     container_name: tweezer-app
