@@ -14,7 +14,7 @@
                         @input="disabled = !$refs.input.value"
                         id="tweet-compose"
                         name="tweet"
-                        class="bg-transparent placeholder-gray-400 text-xl py-2 focus:outline-none border-none w-full"
+                        class="bg-transparent placeholder-gray-400 text-lg py-2 focus:outline-none border-none w-full"
                         placeholder="What's happening?"
                         autocomplete="off"
                     >

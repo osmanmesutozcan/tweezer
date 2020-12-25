@@ -18,11 +18,12 @@ class TweetFactory extends Factory
      * Define the model's default state.
      *
      * @return array
+     * @throws \Exception
      */
     public function definition(): array
     {
         return [
-            'text' => $this->faker->sentence,
+            'text' => join(' ',  $this->faker->sentences(random_int(1, 2))),
             'user_avatar' => $this->faker->imageUrl(480),
             'user_handle' => \Str::camel(join('_', $this->faker->words(2))),
             'user_name' => $this->faker->name,

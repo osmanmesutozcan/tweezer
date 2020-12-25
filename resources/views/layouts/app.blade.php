@@ -54,6 +54,11 @@
 </div>
 
 <script>
+    /**
+     * Setup virtual scroll.
+     * Also registers a mutation observer to detect when turbo-frame for content is loaded.
+     * That way we can init the virtual scroll correctly.
+     */
     function setup(el) {
         let disposeScroll = () => ({});
 
@@ -122,10 +127,17 @@
         }
     }
 
+    /**
+     * on body loaded.
+     * Runs the first time page is opened.
+     */
     function loaded() {
         Turbo.start();
     }
 
+    /**
+     * Runs each time body content is replaced.
+     */
     function init() {
         if (window.__dispose) {
             window.__dispose()
