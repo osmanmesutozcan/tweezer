@@ -1,0 +1,12 @@
+{
+    "name": "osmeoz/turbo-laravel",
+    "description": "Turbo integration for Laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Osman Mesut Ozcan",
+            "email": "osmanmesutozcan@gmail.com"
+        }
+    ],
+    "require": {}
+}
