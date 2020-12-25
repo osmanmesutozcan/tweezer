@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="contentHead">
-        <h2 class="font-black text-lg">Home</h2>
+        <h2 class="font-black text-lg">Tweet</h2>
     </x-slot>
 
     <x-slot name="content">
@@ -43,5 +43,4 @@
         </div>
     </x-slot>
 </x-app-layout>
-
 

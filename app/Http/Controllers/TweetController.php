@@ -9,14 +9,21 @@ class TweetController extends Controller
 {
     public function index()
     {
-        return view('tweet.index', [
+        return view('tweet._index', [
             'tweets' => Tweet::all()
+        ]);
+    }
+
+    public function show(Tweet $tweet)
+    {
+        return view('tweet.show', [
+            'tweet' => $tweet,
         ]);
     }
 
     public function create()
     {
-        return view('tweet.create');
+        return view('tweet._create');
     }
 
     public function store(Request $request)

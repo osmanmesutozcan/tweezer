@@ -33,7 +33,7 @@
             </div>
 
             <div class="w-6/12 min-h-screen px-6">
-                <div class="relative border-l border-r border-gray-700">
+                <div class="relative min-h-screen border-l border-r border-gray-700">
                     <div class="absolute w-full p-4 flex items-center border-b border-gray-700 mb-2 bg-gray-900 h-12 z-40">
                         {{ $contentHead }}
                     </div>

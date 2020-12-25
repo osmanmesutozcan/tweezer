@@ -30,13 +30,13 @@ class HomeController extends Controller
     {
         $trends = array_map(fn() => join('.', $this->faker->words(2)), range(0, 4));
 
-        return view('home.trending', [
+        return view('home._trending', [
             'trends' => $trends
         ]);
     }
 
     public function whoFollow()
     {
-        return view('home.who-follow');
+        return view('home._who-follow');
     }
 }

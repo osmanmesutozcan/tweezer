@@ -21,5 +21,5 @@ Route::get('/home/trending', [\App\Http\Controllers\HomeController::class, 'tren
 Route::get('/home/who-follow', [\App\Http\Controllers\HomeController::class, 'whoFollow'])->name('home.who-follow');
 
 Route::resource('/tweet', \App\Http\Controllers\TweetController::class)->only([
-    'index', 'create', 'store'
+    'index', 'create', 'store', 'show'
 ]);
